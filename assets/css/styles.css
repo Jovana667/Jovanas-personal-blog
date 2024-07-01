@@ -35,6 +35,8 @@ body.dark-mode {
     --text-color: white;
     --input-bg: #555;
     --input-text: white;
+    --button-bg: #555;
+    --button-text: white;
 }
 
 :root {
@@ -42,4 +44,6 @@ body.dark-mode {
     --text-color: black;
     --input-bg: white;
     --input-text: black;
+    --button-bg: white;
+    --button-text: black;
 }
