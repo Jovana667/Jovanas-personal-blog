@@ -1,7 +1,5 @@
-/* Import the base styles from form.css */
 @import url('styles.css');
 
-/* Blog page styles */
 .blog-page {
     flex-direction: column;
 }
@@ -18,7 +16,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    width: 100%;
     border-bottom: 8px double black; 
+    background-color: var(--header-bg);
+    color: var(--header-text);
 }
 
 #header-items {
@@ -60,6 +61,8 @@ footer {
     padding: 20px;
     border-top: 8px double black;
     width: 100%;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
 }
 
 #footer-details {

@@ -1,19 +1,12 @@
 @import url('styles.css');
 
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-} */
-
 header {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
     border-bottom: 8px double black;
+    background-color: var(--header-bg);
+    color: var(--header-text);
 }
 
 .mode-toggle {
@@ -24,19 +17,12 @@ header {
     cursor: pointer;
 } 
 
-/* .outer-container {
-    position: relative;
-    width: calc(100% - 40px);
-    height: calc(100vh - 40px);
-    margin: 10px;
-} */
-
 .container {
     display: flex;
     height: 100%;
     width: 100%;
     margin: 10px;
-    margin: 0px -20px; /* Double the margin value for left and right */
+    margin: 0px -20px; 
 }
 
 .left-section {
@@ -92,9 +78,9 @@ input, textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    /* font-size: 1em; */
     background-color: var(--input-bg);
     color: var(--input-text);
+    font-family: Arial, sans-serif;
 }
 
 textarea {
@@ -111,21 +97,3 @@ button {
     margin-top: 10px;
     font-size: 1em;
 }
-/* 
-:root {
-    --bg-color: white;
-    --text-color: black;
-    --input-bg: white;
-    --input-text: black;
-} */
-
-/* body.dark-mode {
-    --bg-color: #333;
-    --text-color: white;
-    --input-bg: #555;
-    --input-text: white;
-}
-
-body.dark-mode .circle {
-    background: linear-gradient(to bottom, #fbdc96, #fcce69, #fcc957, #fdc037, #feb717, #feb206, #f5ab01, #e9a303, #d79706, #c58b08, #b9830a, #a7780d, #976d0f, #886412);
-} */
