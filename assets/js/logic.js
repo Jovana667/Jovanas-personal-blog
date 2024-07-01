@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const modeToggle = document.getElementById('mode-toggle');
     const body = document.body;
 
-    // Check if dark mode was previously set
     if (localStorage.getItem('darkMode') === 'true') {
         body.classList.add('dark-mode');
         modeToggle.textContent = '🌙';

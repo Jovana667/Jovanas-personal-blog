@@ -1,0 +1,45 @@
+/* header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-bottom: 8px double black;
+    width: 100%;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.outer-container {
+    position: relative;
+    width: calc(100% - 40px);
+    height: calc(100vh - 40px);
+    margin: 10px;
+}
+
+/* .mode-toggle {
+    position: relative;
+    align-self: flex-end;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}  */
+
+body.dark-mode {
+    --bg-color: #333;
+    --text-color: white;
+    --input-bg: #555;
+    --input-text: white;
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --input-bg: white;
+    --input-text: black;
+}

@@ -1,26 +1,42 @@
-body {
+@import url('styles.css');
+
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+} */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-bottom: 8px double black;
 }
 
-.outer-container {
+.mode-toggle {
+    position: relative;
+    align-self: flex-end;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+} 
+
+/* .outer-container {
     position: relative;
     width: calc(100% - 40px);
     height: calc(100vh - 40px);
-    margin: 20px;
-    border: 2px solid black;
-}
+    margin: 10px;
+} */
 
 .container {
     display: flex;
     height: 100%;
     width: 100%;
-    border: 2px solid black;
     margin: 10px;
+    margin: 0px -20px; /* Double the margin value for left and right */
 }
 
 .left-section {
@@ -28,13 +44,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid #000;
+    border-right: 8px double #000;
 }
 
 .circle {
-    width: 350px;
-    height: 350px;
-    background: linear-gradient(to bottom, #FFD700, #FFA500, #FF8C00);
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to bottom, #fbdc96, #fcce69, #fcc957, #fdc037, #feb717, #feb206, #f5ab01, #e9a303, #d79706, #c58b08, #b9830a, #a7780d, #976d0f, #886412);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -44,7 +60,7 @@ body {
 .circle h1 {
     color: white;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
@@ -76,7 +92,7 @@ input, textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;
+    /* font-size: 1em; */
     background-color: var(--input-bg);
     color: var(--input-text);
 }
@@ -95,26 +111,15 @@ button {
     margin-top: 10px;
     font-size: 1em;
 }
-
+/* 
 :root {
     --bg-color: white;
     --text-color: black;
     --input-bg: white;
     --input-text: black;
-}
+} */
 
-.mode-toggle {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-body.dark-mode {
+/* body.dark-mode {
     --bg-color: #333;
     --text-color: white;
     --input-bg: #555;
@@ -122,5 +127,5 @@ body.dark-mode {
 }
 
 body.dark-mode .circle {
-    background: linear-gradient(to bottom, #FFD700, #FFA500, #8B4513);
-}
+    background: linear-gradient(to bottom, #fbdc96, #fcce69, #fcc957, #fdc037, #feb717, #feb206, #f5ab01, #e9a303, #d79706, #c58b08, #b9830a, #a7780d, #976d0f, #886412);
+} */
